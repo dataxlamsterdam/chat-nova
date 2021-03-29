@@ -1,6 +1,6 @@
 <?php
 
-namespace Binarcode\NovaChat\Fields;
+namespace Dataxl\NovaChat\Fields;
 
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Field;

@@ -20,7 +20,7 @@ In the next version the implementation will include real time echo.
 You can install the package via composer:
 
 ```bash
-composer require binarcode/nova-chat
+composer require dataxlamsterdam/nova-chat
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ Init chat in your `NovaServiceProvider.php` tools just import it as:
 public function tools()
 {
     return [
-        \Binarcode\NovaChat\Tools\ChatTool::make(),
+        \Dataxl\NovaChat\Tools\ChatTool::make(),
     ];
 }
 ```

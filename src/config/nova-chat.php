@@ -5,9 +5,9 @@ return [
 
     'recipients_table' => 'users',
 
-    'recipients_model' => \Binarcode\NovaChat\Models\RecipientModel::class,
+    'recipients_model' => \Dataxl\NovaChat\Models\RecipientModel::class,
 
-    'messages_model' => \Binarcode\NovaChat\Models\MessageModel::class,
+    'messages_model' => \Dataxl\NovaChat\Models\MessageModel::class,
 
     'realtime' => false,
 ];

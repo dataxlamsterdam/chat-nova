@@ -1,8 +1,8 @@
 <?php
 
-namespace BinarCode\NovaChat\Http\Resources;
+namespace Dataxl\NovaChat\Http\Resources;
 
-use BinarCode\NovaChat\Fields\HandlesConversionsTrait;
+use Dataxl\NovaChat\Fields\HandlesConversionsTrait;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class MediaResource extends JsonResource

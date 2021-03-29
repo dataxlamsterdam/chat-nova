@@ -1,17 +1,17 @@
 {
-    "name": "binarcode/nova-chat",
+    "name": "dataxlamsterdam/nova-chat",
     "description": "A realtime chat implementation for laravel nova.",
     "keywords": [
         "binarcode",
         "nova-chat"
     ],
-    "homepage": "https://github.com/binarcode/nova-chat",
+    "homepage": "https://github.com/dataxlamsterdam/nova-chat",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Eduard Lupacescu",
-            "email": "eduard.lupacescu@binarcode.com",
+            "name": "Tim de Kok",
+            "email": "tim@dataxl.nl",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Binarcode\\NovaChat\\": "src"
+            "Dataxl\\NovaChat\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Binarcode\\NovaChat\\Tests\\": "tests"
+            "Dataxl\\NovaChat\\Tests\\": "tests"
         }
     },
     "minimum-stability": "dev",
@@ -44,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Binarcode\\NovaChat\\NovaChatServiceProvider"
+                "Dataxl\\NovaChat\\NovaChatServiceProvider"
             ]
         }
     }

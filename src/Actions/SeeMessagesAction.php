@@ -1,6 +1,6 @@
 <?php
 
-namespace Binarcode\NovaChat\Actions;
+namespace Dataxl\NovaChat\Actions;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\InteractsWithQueue;

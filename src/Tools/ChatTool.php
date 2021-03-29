@@ -1,9 +1,9 @@
 <?php
 
-namespace Binarcode\NovaChat\Tools;
+namespace Dataxl\NovaChat\Tools;
 
-use Binarcode\NovaChat\Resources\MessagesResource;
-use Binarcode\NovaChat\Resources\RecipientResource;
+use Dataxl\NovaChat\Resources\MessagesResource;
+use Dataxl\NovaChat\Resources\RecipientResource;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;

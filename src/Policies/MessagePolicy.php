@@ -1,6 +1,6 @@
 <?php
 
-namespace Binarcode\NovaChat\Policies;
+namespace Dataxl\NovaChat\Policies;
 
 class MessagePolicy
 {

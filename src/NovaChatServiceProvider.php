@@ -1,11 +1,11 @@
 <?php
 
-namespace BinarCode\NovaChat;
+namespace Dataxl\NovaChat;
 
-use Binarcode\NovaChat\Models\MessageModel;
-use Binarcode\NovaChat\Models\RecipientModel;
-use Binarcode\NovaChat\Policies\MessagePolicy;
-use Binarcode\NovaChat\Policies\RecipientPolicy;
+use Dataxl\NovaChat\Models\MessageModel;
+use Dataxl\NovaChat\Models\RecipientModel;
+use Dataxl\NovaChat\Policies\MessagePolicy;
+use Dataxl\NovaChat\Policies\RecipientPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -41,7 +41,7 @@ class NovaChatServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova'])
-            ->prefix('nova-vendor/binarcode/advanced-nova-chat')
+            ->prefix('nova-vendor/dataxl/advanced-nova-chat')
             ->group(__DIR__ . '/../routes/api.php');
     }
 

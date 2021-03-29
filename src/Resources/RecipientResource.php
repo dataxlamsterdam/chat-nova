@@ -1,9 +1,9 @@
 <?php
 
-namespace Binarcode\NovaChat\Resources;
+namespace Dataxl\NovaChat\Resources;
 
-use Binarcode\NovaChat\Models\MessageModel;
-use Binarcode\NovaChat\Models\RecipientModel;
+use Dataxl\NovaChat\Models\MessageModel;
+use Dataxl\NovaChat\Models\RecipientModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\HasMany;

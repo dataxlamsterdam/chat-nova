@@ -1,6 +1,6 @@
 <?php
 
-namespace BinarCode\NovaChat\Http\Requests;
+namespace Dataxl\NovaChat\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

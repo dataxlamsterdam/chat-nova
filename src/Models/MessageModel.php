@@ -1,6 +1,6 @@
 <?php
 
-namespace Binarcode\NovaChat\Models;
+namespace Dataxl\NovaChat\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder|MessageModel withRecipient(int $id)
  * @property int from_id
  * @property int to_id
- * @package Binarcode\NovaChat\Models
+ * @package Dataxl\NovaChat\Models
  */
 class MessageModel extends Model
 {

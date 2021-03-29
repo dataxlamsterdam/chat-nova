@@ -1,6 +1,6 @@
 <?php
 
-namespace BinarCode\NovaChat\Http\Controllers;
+namespace Dataxl\NovaChat\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

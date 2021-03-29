@@ -1,6 +1,6 @@
 <?php
 
-namespace Binarcode\NovaChat\Models;
+namespace Dataxl\NovaChat\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
