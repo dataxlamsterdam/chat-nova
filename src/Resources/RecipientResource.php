@@ -2,6 +2,7 @@
 
 namespace Dataxl\NovaChat\Resources;
 
+use App\User;
 use Dataxl\NovaChat\Models\MessageModel;
 use Dataxl\NovaChat\Models\RecipientModel;
 use Illuminate\Http\Request;
@@ -23,11 +24,13 @@ class RecipientResource extends Resource
     {
         return [
             Text::make('Name', function () {
-                return "{$this->first_name} {$this->last_name}";
+                $name = User::select('name')->where('id', $this->id)->first();
+                return $name->name;
             })->hideFromDetail(),
 
             Text::make('Your Conversation With', function () {
-                return "{$this->first_name} {$this->last_name}";
+                $name = User::select('name')->where('id', $this->id)->first();
+                return $name->name;
             })->hideFromIndex(),
 
             Number::make('Number of Messages', function () {
