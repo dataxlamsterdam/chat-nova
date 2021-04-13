@@ -2,6 +2,7 @@
 
 namespace Dataxl\NovaChat\Resources;
 
+use App\User;
 use Dataxl\NovaChat\Models\MessageModel;
 use Dataxl\NovaChat\Models\RecipientModel;
 use Carbon\Carbon;
@@ -24,14 +25,34 @@ class MessagesResource extends Resource
     {
         return [
             BelongsTo::make('To', 'recipient', RecipientResource::class)
-                ->hideWhenCreating(),
+                ->hideWhenCreating()
+                ->hideFromIndex()
+                ->hideFromDetail(),
+
+            Text::make('To', function ($request) {
+                $name = User::select('name')
+                    ->leftJoin('messages', 'messages.to_id', '=', 'users.id')
+                    ->where('messages.to_id', $this->to_id)
+                    ->first();
+                return $name->name;
+            })->hideFromDetail()
+                ->showOnDetail(),
 
             BelongsTo::make('Sender', 'sender', RecipientResource::class)
-                ->hideWhenCreating(),
+                ->hideWhenCreating()
+                ->hideFromDetail(),
+
+            Text::make('Sender', function ($request) {
+                $name = User::select('name')
+                    ->leftJoin('messages', 'messages.from_id', '=', 'users.id')
+                    ->where('messages.from_id', $this->from_id)
+                    ->first();
+                return $name->name;
+            }),
 
 
-           Heading::make('<p class="text-info">Message to <strong>'. optional(RecipientModel::find($request->viaResourceId))->name .'</strong></p>')->asHtml()
-            ->hideFromDetail(),
+            Heading::make('<p class="text-info">Message to <strong>'.optional(User::find($request->viaResourceId))->name.'</strong></p>')->asHtml()
+                ->hideFromDetail(),
 
             Textarea::make('Message', 'body'),
 
